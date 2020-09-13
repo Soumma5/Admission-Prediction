@@ -1,0 +1,16 @@
+<html>
+<title>Predictor</title>
+<body>
+<h1 font="Times New Roman">Predict Admission Chances</h1>
+<form action="{{ url_for('predict') }}" method="post">
+<label>Enter GRE</label><br>
+<input type="number" step="0.01" name="gre"><br><br>
+<label>Enter TOEFL</label><br>
+<input type="number" step="0.01" name="toefl"><br><br>
+<label>Enter CGPA</label><br>
+<input type="number" step="0.01" name="cgpa"><br><br>
+<input type="submit"><br><br>
+</form>
+{{ prediction_text }}
+</body>
+</html>
